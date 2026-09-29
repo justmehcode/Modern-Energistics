@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "extendedae:ex_pattern_provider"
+    },
+    {
+      "item": "modernenergistics:mi_pattern_provider"
+    }
+  ],
+  "result": {
+    "id": "modernenergistics:extended_mi_pattern_provider",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedae"
+    }
+  ]
+}

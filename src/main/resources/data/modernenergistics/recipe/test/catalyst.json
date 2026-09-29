@@ -1,0 +1,33 @@
+{
+  "type": "modern_industrialization:mixer",
+  "eu": 2,
+  "duration": 4,
+  "item_inputs": [
+    {
+      "item": "minecraft:diamond",
+      "amount": 1,
+      "probability": 0
+    },
+    {
+      "item": "minecraft:cobblestone",
+      "amount": 1
+    }
+  ],
+  "fluid_inputs": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 100,
+      "probability": 0
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 10
+    }
+  ],
+  "item_outputs": [
+    {
+      "item": "minecraft:obsidian",
+      "amount": 1
+    }
+  ]
+}

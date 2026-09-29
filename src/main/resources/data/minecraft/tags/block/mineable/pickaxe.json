@@ -1,0 +1,25 @@
+{
+  "values": [
+    {
+      "id": "modernenergistics:extended_mi_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "modernenergistics:me_io_hatch",
+      "required": false
+    },
+    {
+      "id": "modernenergistics:mi_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "modernenergistics:combined_mi_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "modernenergistics:advanced_mi_pattern_provider",
+      "required": false
+    }
+  ],
+  "replace": false
+}

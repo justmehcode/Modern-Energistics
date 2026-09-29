@@ -1,0 +1,59 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.112'
+}
+version = '1.0.0'
+group = 'dev.mehdi.modernenergistics'
+base { archivesName = 'modern-energistics-1.21.1' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.neoforged.net/releases' }
+    maven { url = 'https://maven.glodblock.com/releases' }
+    maven { url = 'https://modmaven.dev' }
+}
+neoForge {
+    version = '21.1.251'
+    mods { modernenergistics { sourceSet sourceSets.main } }
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'modernenergistics'
+            gameDirectory = file('build/gametest')
+        }
+    }
+}
+dependencies {
+    implementation 'org.appliedenergistics:appliedenergistics2:19.2.17'
+    implementation 'org.appliedenergistics:guideme:21.1.14'
+    implementation files('libs/Modern-Industrialization-2.5.8.jar')
+    // MI embeds this API at runtime; expose the identical jar to javac without bundling it again.
+    compileOnly files(zipTree('libs/Modern-Industrialization-2.5.8.jar').matching {
+        include 'META-INF/jarjar/GrandPower-3.0.0.jar'
+    })
+    compileOnly files('libs/AdvancedAE-1.6.12-1.21.1.jar', 'libs/ExtendedAE-1.21-2.2.38-neoforge.jar')
+    compileOnly fileTree(dir: 'libs', include: ['tesseract-api*.jar', 'AppliedFlux*.jar'])
+    if (project.hasProperty('addons') || project.hasProperty('advanced'))
+        runtimeOnly fileTree(dir: 'libs', include: ['AdvancedAE*.jar', 'geckolib*.jar'])
+    if (project.hasProperty('addons') || project.hasProperty('extended'))
+        runtimeOnly fileTree(dir: 'libs', include: ['ExtendedAE*.jar', 'Glodium*.jar'])
+    if (project.hasProperty('flux'))
+        runtimeOnly fileTree(dir: 'libs', include: ['AppliedFlux*.jar', 'Glodium*.jar'])
+    if (project.hasProperty('ei'))
+        runtimeOnly fileTree(dir: 'libs', include: ['extended-industrialization*.jar', 'tesseract-api*.jar'])
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+test { useJUnitPlatform() }
+tasks.named('jar') {
+    from('LICENSE') { into 'META-INF' }
+    exclude 'dev/mehdi/modernenergistics/test/**'
+    exclude 'data/modernenergistics/structure/bridge_test.nbt'
+    exclude 'data/modernenergistics/recipe/test/**'
+}
+
+

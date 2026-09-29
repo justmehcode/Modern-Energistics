@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "id": "modernenergistics:me_io_hatch",
+    "count": 1
+  },
+  "pattern": [
+    "IFI",
+    "PDP",
+    "IFI"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "F": {
+      "item": "modern_industrialization:advanced_fluid_input_hatch"
+    },
+    "I": {
+      "item": "modern_industrialization:advanced_item_input_hatch"
+    },
+    "P": {
+      "item": "ae2:interface"
+    }
+  }
+}

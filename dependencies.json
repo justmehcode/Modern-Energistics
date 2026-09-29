@@ -1,0 +1,42 @@
+[
+  {
+    "file": "AdvancedAE-1.6.12-1.21.1.jar",
+    "sha256": "a01d9718667ac13899013e91c5b0b7708b9b9db1da9b8e380772dde54bbe8f41",
+    "url": "https://cdn.modrinth.com/data/rxYaglEe/versions/ablTMAjP/AdvancedAE-1.6.12-1.21.1.jar"
+  },
+  {
+    "file": "ExtendedAE-1.21-2.2.38-neoforge.jar",
+    "sha256": "8731067860498913550e4300d9bc0449e66a558a7f0b1663ed155a2fd29af8ae",
+    "url": "https://github.com/GlodBlock/ExtendedAE/releases/download/1.21-2.2.38-neoforge/ExtendedAE-1.21-2.2.38-neoforge.jar"
+  },
+  {
+    "file": "geckolib-neoforge-1.21.1-4.8.2.jar",
+    "sha256": "a733757157bd914b56a24c09d2797c522f0f339eb5e45ec1d70a8a9326ecd9df",
+    "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/RVIo5f6E/geckolib-neoforge-1.21.1-4.8.2.jar"
+  },
+  {
+    "file": "Glodium-1.21-2.2-neoforge.jar",
+    "sha256": "369e99753df0bdc90a38a8c52df4abb37baf6b18c6ca130af4c7bc75fb160a85",
+    "url": "https://cdn.modrinth.com/data/UhW5uCKw/versions/pfbmdJ3b/Glodium-1.21-2.2-neoforge.jar"
+  },
+  {
+    "file": "Modern-Industrialization-2.5.8.jar",
+    "sha256": "95c910c40f6f34dfcf398272303a666e3ccf54dc71650c7d8c5662b10b1b95b1",
+    "url": "https://cdn.modrinth.com/data/Gov5Dboq/versions/s5PDXbfR/Modern-Industrialization-2.5.8.jar"
+  },
+  {
+    "file": "extended-industrialization-1.16.2-1.21.1.jar",
+    "url": "https://cdn.modrinth.com/data/CCM0U9YU/versions/glBO8j6T/extended-industrialization-1.16.2-1.21.1.jar",
+    "sha256": "22c68835266a83a77511d3f341cbdecb7c9eee0f1c9e7318d7c77283691e5c9c"
+  },
+  {
+    "file": "tesseract-api-neoforge-1.12.16-1.21.1.jar",
+    "url": "https://cdn.modrinth.com/data/pHNT1iyc/versions/QBdXDLBz/tesseract-api-neoforge-1.12.16-1.21.1.jar",
+    "sha256": "b1bf1e9d7ea42e0ebdb6f8ab7bc05edeb4ab5c3e9a13b1e7e4594431327c781e"
+  },
+  {
+    "file": "AppliedFlux-1.21-2.1.6-neoforge.jar",
+    "url": "https://edge.forgecdn.net/files/8970/797/AppliedFlux-1.21-2.1.6-neoforge.jar",
+    "sha256": "18b27bf5a4cdb4eea272c3424cc2a4c4f604ed2e73f3e05dccdf7a1b1d6dc97e"
+  }
+]

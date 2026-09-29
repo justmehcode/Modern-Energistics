@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "modernenergistics:block/advanced_mi_pattern_provider"
+  }
+}
